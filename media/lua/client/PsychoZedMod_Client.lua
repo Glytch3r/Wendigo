@@ -51,7 +51,7 @@ function PsychoZedMod.coreFunc(zed)
 end
 
 Events.OnZombieUpdate.Remove(PsychoZedMod.coreFunc)
-Events.OnZombieUpdate.Add(PsychoZedMod.coreFunc)
+--Events.OnZombieUpdate.Add(PsychoZedMod.coreFunc)
 
 
 -----------------------            ---------------------------

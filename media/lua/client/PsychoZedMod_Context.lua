@@ -28,23 +28,20 @@ PsychoZedMod = PsychoZedMod or {}
 function PsychoZedMod.Context(player, context, worldobjects)
 	local pl = getSpecificPlayer(player)
 	if not pl then return end
-	local inv = pl:getInventory()
-	local sq = clickedSquare
-	local worldSquare = nil
 	if (getCore():getDebug() or isAdmin()) then
 
 		-----------------------    wear*        ---------------------------
-		local sb = opt:addOptionOnTop(getText('ContextMenu_PsychoOutfit'))
-		local spwn = ISContextMenu:getNew(opt)
-		opt:addSubMenu(sb, spwn)
+
 
 		if not PsychoZedMod.isWearingPsychoZed(pl) then
 			local ss = context:addOption("Wendigo", worldobjects, function()
 				PsychoZedMod.wearPsychoZed(pl)
+				PsychoZedMod.AdminPsychoZed()
 			end);
 		else
 			local ss3 = context:addOption("Remove Wendigo", worldobjects, function()
 				PsychoZedMod.clearPsychoZedSkin(pl)
+				PsychoZedMod.AdminPsychoZed()
 			end);
 		end
 

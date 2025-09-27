@@ -31,8 +31,8 @@ require "lua_timers"
 
 require 'NPCs/ZombiesZoneDefinition'
 
-MapSymbolDefinitions.getInstance():addTexture("PsychoZed", "media/ui/LootableMaps/PsychoZedMod_Map.png")
-
+--MapSymbolDefinitions.getInstance():addTexture("PsychoZed", "media/ui/LootableMaps/PsychoZedMod_Map.png")
+--[[ 
 Events.OnPostDistributionMerge.Add(function()
     local rate = SandboxVars.PsychoZed.SpawnRate or 2
    --chanceToSpawn=0,
@@ -42,3 +42,4 @@ end)
 
 
 
+ ]]
