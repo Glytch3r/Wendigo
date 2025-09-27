@@ -181,35 +181,34 @@ function PsychoZedMod.isUnarmed(pl, wpn)
 end
 
 -----------------------            ---------------------------
-
 function PsychoZedMod.AdminPsychoZed()
-	local pl = getPlayer() 
-	if not pl then return end 
-	if PsychoZedMod.isWearingPsychoZed(pl) and string.lower(pl:getAccessLevel()) == "admin" then
-		if pl:getVariableBoolean('isWearingPsychoZed') == false then
-			pl:setVariable('isWearingPsychoZed', 'true')
-			--if not pl:isHideWeaponModel() then pl:setHideWeaponModel(true) end
-			if isClient() then
-				sendClientCommand('PsychoZed', 'isWearingPsychoZed', {isWearingPsychoZed = true})
-			end
-		end
-	else
-		if pl:getVariableBoolean('isWearingPsychoZed') == true then
-			pl:setVariable('isWearingPsychoZed', 'false');
+    local pl = getPlayer()
+    if not pl then return end
+    local isAdm   = string.lower(pl:getAccessLevel()) == "admin"
+    local wearing = PsychoZedMod.isWearingPsychoZed(pl)
+    local current = pl:getVariableBoolean('isWearingPsychoZed')
 
-			--if pl:isHideWeaponModel() then pl:setHideWeaponModel(false) end
-			if isClient() then
-				sendClientCommand('PsychoZed', 'isWearingPsychoZed', {isWearingPsychoZed = false})
-			end
-		end
-	end
+    if isAdm and wearing then
+        if not current then
+            pl:setVariable('isWearingPsychoZed', "true")
+            if isClient() then
+                sendClientCommand('PsychoZed', 'isWearingPsychoZed', {isWearingPsychoZed = true})
+            end
+        end
+    else
+        if current then
+            pl:setVariable('isWearingPsychoZed', "false")
+            if isClient() then
+                sendClientCommand('PsychoZed', 'isWearingPsychoZed', {isWearingPsychoZed = false})
+            end
+        end
+    end
 end
+
 Events.OnWeaponSwing.Add(PsychoZedMod.AdminPsychoZed)
 Events.EveryTenMinutes.Add(PsychoZedMod.AdminPsychoZed)
 Events.OnClothingUpdated.Add(PsychoZedMod.AdminPsychoZed)
 Events.OnScoreboardUpdate.Add(PsychoZedMod.AdminPsychoZed)
-
-
 
 
 --[[ 
