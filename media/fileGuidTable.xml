@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<fileGuidTable>
+	<files>
+		<path>media/clothing/clothingItems/Psycho1.xml</path>
+		<guid>d954ca3e-08a5-4dca-8d4c-b1da400e1644</guid>
+	</files>
+	<files>
+		<path>media/clothing/clothingItems/Psycho2.xml</path>
+		<guid>68e179a0-b47d-48cf-9d2d-bfb1330725ca</guid>
+	</files>
+</fileGuidTable>

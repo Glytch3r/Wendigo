@@ -1,0 +1,18 @@
+ContextMenu_EN = {
+
+	ContextMenu_PsychoDebug = "PsychoZed Debug:",
+	ContextMenu_PsychoPopulation = "Population: ",
+	ContextMenu_PsychoSpawn = "Spawn Psycho",
+	ContextMenu_PsychoKillPsychos = "Kill Nearby Psycho",
+	ContextMenu_PsychoKillZeds = "Kill Non Psycho Zed",
+	ContextMenu_PsychoOutfit = "Outfit: ",
+	ContextMenu_PsychoWearSkin = "Wear PsychoZed Skin",
+	ContextMenu_PsychoRemoveOutfit = "Remove PsychoZed Outfit",
+
+}
+
+
+
+
+
+

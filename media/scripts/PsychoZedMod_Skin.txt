@@ -1,0 +1,24 @@
+module PsychoZedMod {
+    imports { Base }
+
+	item Psycho1
+	{
+		DisplayCategory = ZedDmg,
+		Type = Clothing,
+		ClothingItem = Psycho1,
+		BodyLocation = ZedDmg,
+		WorldRender = FALSE,
+	}
+
+	item Psycho2
+	{
+		DisplayCategory = ZedDmg,
+		Type = Clothing,
+		ClothingItem = Psycho2,
+		BodyLocation = ZedDmg,
+		WorldRender = FALSE,
+	}
+
+
+}
+

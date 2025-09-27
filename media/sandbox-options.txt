@@ -1,0 +1,101 @@
+VERSION = 1,
+
+
+
+
+option PsychoZed.DisableTrip
+{
+    type = boolean, default = true,
+	page = PsychoZed, translation = PsychoZed_DisableTrip,
+}
+
+option PsychoZed.PlayerSympathy
+{
+	type = boolean, default = true,
+	page = PsychoZed, translation = PsychoZed_PlayerSympathy,
+}
+
+
+
+option PsychoZed.FOV
+{
+	type = double,	 min = 0,  max = 360,  default = 50,
+	page = PsychoZed, translation = PsychoZed_FOV,
+}
+
+
+option PsychoZed.TurnSpeed
+{
+	type = double,	 min = 1,  max = 10.0,  default = 1.5,
+	page = PsychoZed, translation = PsychoZed_TurnSpeed,
+}
+
+
+option PsychoZed.DeathScreamAttract
+{
+    type = boolean, default = true,
+	page = PsychoZed, translation = PsychoZed_DeathScreamAttract,
+}
+
+option PsychoZed.SFXRate
+{
+    type = integer, min = 0, max = 100, default = 5,
+	page = PsychoZed, translation = PsychoZed_SFXRate,
+}
+
+option PsychoZed.LacerateChance
+{
+    type = integer, min = 0, max = 100, default = 5,
+	page = PsychoZed, translation = PsychoZed_LacerateChance,
+}
+
+option PsychoZed.DropHandItemChance
+{
+    type = integer, min = 0, max = 100, default = 5,
+	page = PsychoZed, translation = PsychoZed_DropHandItemChance,
+}
+
+option PsychoZed.InstaKillChance
+{
+    type = integer, min = 0, max = 100, default = 5,
+	page = PsychoZed, translation = PsychoZed_InstaKillChance,
+}
+option PsychoZed.MinDmg
+{
+    type = integer, min = 1, max = 100, default = 35,
+	page = PsychoZed, translation = PsychoZed_MinDmg,
+}
+option PsychoZed.MaxDmg
+{
+    type = integer, min = 1, max = 100, default = 80,
+	page = PsychoZed, translation = PsychoZed_MaxDmg,
+}
+
+option PsychoZed.SpawnRate
+{
+	type = double,	 min = 0.001,  max = 100,  default = 2,
+	page = PsychoZed, translation = PsychoZed_SpawnRate,
+}
+
+option PsychoZed.ShowName
+{
+    type = boolean, default = false,
+	page = PsychoZed, translation = PsychoZed_ShowName,
+}
+option PsychoZed.AbsorbDmgChance
+{
+    type = integer, min = 0, max = 100, default = 50,
+	page = PsychoZed, translation = PsychoZed_AbsorbDmgChance,
+}
+option PsychoZed.DropRate
+{
+    type = double, min = 0, max = 100, default = 20,
+	page = PsychoZed, translation = PsychoZed_DropRate,
+}
+
+
+option PsychoZed.DeathRewards
+{
+	type = string, default = Base.HuntingKnife;Base.RippedSheetsDirty,
+	page = PsychoZed, translation = DeathRewards,
+}

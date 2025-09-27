@@ -1,0 +1,59 @@
+Sandbox_EN = {
+
+
+
+
+    Sandbox_PsychoZed = "Psycho",
+
+
+	Sandbox_PsychoZed_DisableTrip = "Disable Tripping",
+	Sandbox_PsychoZed_DisableTrip_tooltip = "Psycho will not falldown when it is sprinting.",
+
+	Sandbox_PsychoZed_PlayerSympathy = "Player Sympathy",
+	Sandbox_PsychoZed_PlayerSympathy_tooltip = "Psycho cannot be aimed at when it is crying.",
+
+	Sandbox_PsychoZed_FOV = "Player Sympathy Field of View",
+	Sandbox_PsychoZed_FOV_tooltip = "Affects the aim cone width that detects if player is aiming towards a Psycho.",
+
+	Sandbox_PsychoZed_TurnSpeed = "Turn Speed",
+
+	Sandbox_PsychoZed_DeathScreamAttract = "Death Scream Attracts",
+	Sandbox_PsychoZed_DeathScreamAttract = "Upon Death Pscyho Screams . When turned on it will Attract other zeds",
+	Sandbox_PsychoZed_SFXRate = "Sound Effects Rate",
+
+	Sandbox_PsychoZed_LacerateChance = "Psycho Lacerate Chance",
+	Sandbox_PsychoZed_LacerateChance_tooltip = "Set to 0 to turn feature off",
+
+	Sandbox_PsychoZed_DropHandItemChance = "Drop Hand Item Chance",
+	Sandbox_PsychoZed_DropHandItemChance_tooltip = "Drops Hand Item Chance When Bashed. Set to 0 to turn feature off.",
+
+	Sandbox_PsychoZed_InstaKillChance = "Psycho Can Instant Kill",
+	Sandbox_PsychoZed_InstaKillChance_tooltip = "Set to 0 to turn feature off",
+
+	Sandbox_PsychoZed_MinDmg = "Minimum Damage",
+	Sandbox_PsychoZed_MinDmg_tooltip = "Psycho Minimum Normal Attack Damage",
+
+	Sandbox_PsychoZed_MaxDmg = "Maximum Damage",
+	Sandbox_PsychoZed_MaxDmg_tooltip = "Psycho Maximum  Normal Attack Damage",
+
+	Sandbox_PsychoZed_SpawnRate = "Psycho Spawn Rate",
+	Sandbox_PsychoZed_SpawnRate_tooltip = "Set to 0 to prevent Psycho from normally spawning",
+
+
+	Sandbox_PsychoZed_ShowName = "Show Psycho Name Tag",
+	Sandbox_PsychoZed_ShowName_tooltip = "Shows Psycho Name above its head ",
+
+
+	Sandbox_PsychoZed_AbsorbDmgChance = "Absorb Dmg Chance",
+	Sandbox_PsychoZed_AbsorbDmgChance_tooltip = "Chance to nullify damage. Set to zero to turn of feature.",
+
+	Sandbox_PsychoZed_DropRate = "Reward Drop Rate.",
+	Sandbox_PsychoZed_DropRate_tooltip  = "Chances for items to spawn when a Psycho dies.",
+
+	Sandbox_PsychoZed_DeathRewards = "Psycho Reward List",
+	Sandbox_PsychoZed_DeathRewards_tooltip = "List of items that may spawn when a Psycho dies. use ; as a delimiter",
+
+
+}
+
+
