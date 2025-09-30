@@ -28,7 +28,7 @@ PsychoZedMod = PsychoZedMod or {}
 function PsychoZedMod.Context(player, context, worldobjects)
 	local pl = getSpecificPlayer(player)
 	if not pl then return end
-	if (getCore():getDebug() or isAdmin()) then
+	if isAdmin() then
 
 		-----------------------    wear*        ---------------------------
 
