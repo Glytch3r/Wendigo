@@ -153,12 +153,12 @@ function PsychoZedMod.keypress(key)
 				sfx = PsychoZedMod.getCrySfx()
 				PsychoZedMod.playPlSfx(pl, sfx, false)
 			elseif  pl:IsAiming()  then
+				sfx = PsychoZedMod.getLaughSfx()
+				PsychoZedMod.playPlSfx(pl, sfx, false)
+			else
 				pl:playEmote('Craze')
 				sfx = PsychoZedMod.getScreamSfx()
 				PsychoZedMod.playPlSfx(pl, sfx, true)
-			else
-				sfx = PsychoZedMod.getLaughSfx()
-				PsychoZedMod.playPlSfx(pl, sfx, false)
 			end
 
 		end
