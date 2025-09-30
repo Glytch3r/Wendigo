@@ -144,13 +144,16 @@ function PsychoZedMod.keypress(key)
 	local pl = getPlayer()
 
     if key == getCore():getKey("Shout") then
-		if PsychoZedMod.isWearingPsychoZed(pl)   then
+        PsychoZedMod.AdminPsychoZed()
 
+		if PsychoZedMod.isWearingPsychoZed(pl)   then
+			
 			local sfx = nil
 			if pl:isSneaking() then
 				sfx = PsychoZedMod.getCrySfx()
 				PsychoZedMod.playPlSfx(pl, sfx, false)
 			elseif  pl:IsAiming()  then
+				pl:playEmote('Craze')
 				sfx = PsychoZedMod.getScreamSfx()
 				PsychoZedMod.playPlSfx(pl, sfx, true)
 			else
@@ -165,6 +168,22 @@ function PsychoZedMod.keypress(key)
 end
 Events.OnKeyPressed.Remove(PsychoZedMod.keypress)
 Events.OnKeyPressed.Add(PsychoZedMod.keypress)
+
+
+
+function tp(key)
+    if (key == getCore():getKey("Shout")) then
+        local pl = getPlayer() 
+
+
+    end
+    return key
+end
+Events.OnKeyPressed.Remove(tp);
+Events.OnKeyPressed.Add(tp);
+
+
+
 
 --[[ 
 function PsychoZedMod.OnZombieDead(zed)

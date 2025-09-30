@@ -194,6 +194,8 @@ function PsychoZedMod.AdminPsychoZed()
             if isClient() then
                 sendClientCommand('PsychoZed', 'isWearingPsychoZed', {isWearingPsychoZed = true})
             end
+			pl:setCanShout(false)
+
         end
     else
         if current then
@@ -201,6 +203,8 @@ function PsychoZedMod.AdminPsychoZed()
             if isClient() then
                 sendClientCommand('PsychoZed', 'isWearingPsychoZed', {isWearingPsychoZed = false})
             end
+			pl:setCanShout(true)
+
         end
     end
 end
