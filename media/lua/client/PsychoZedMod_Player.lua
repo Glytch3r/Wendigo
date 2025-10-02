@@ -194,7 +194,7 @@ function PsychoZedMod.AdminPsychoZed()
             if isClient() then
                 sendClientCommand('PsychoZed', 'isWearingPsychoZed', {isWearingPsychoZed = true})
             end
-			pl:setCanShout(false)
+			--pl:setCanShout(false)
 
         end
     else
@@ -203,7 +203,7 @@ function PsychoZedMod.AdminPsychoZed()
             if isClient() then
                 sendClientCommand('PsychoZed', 'isWearingPsychoZed', {isWearingPsychoZed = false})
             end
-			pl:setCanShout(true)
+			--pl:setCanShout(true)
 
         end
     end
